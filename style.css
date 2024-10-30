@@ -1,61 +1,118 @@
-
-
-  /* Container to hold both divs */
-
-
-/* Left and right divs */
-body {
-    font-family: 'Montserrat', sans-serif;font-size: 22px;  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
+body{
+    background: #18314F ;
 }
 
-.left{
-    position: absolute;
-    padding: 5px;
+.header{
+    position: fixed;
     top: 0;
     left: 0;
-    width: 40vw;
-    height: 100vh;
-    background-color: #0D0630;
-   
+    width: 100%;
+    padding: 20px 10%;
+    background: #C1CFDA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-.right {
-    position: absolute;
-    padding: 5px;
-    right: 0;
-    top: 0;
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover, .navbar a.active {
+    color: #18314F;
+}
+.home{
     height: 100vh;
-    width: 60vw;
-    background-color: #18314F
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+    max-width: 700px;
+    color: white;
+    
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #C1CFDA;
+}
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box{
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+    width: 40px;
+    height: 100%;
+    border: 2px solid #C1CFDA;
+    background: #C1CFDA;
+    border-radius: 8px;
+    font-size: 19px;
+    color:  black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .photo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:17vw;
+    height: 16vw;
+    margin: 10px 0 10px;
+    background: #C1CFDA; ;
+}
+.photo img{
+    width: 15vw;
+}
+.home-sci{
     position: absolute;
+    bottom: 40px;
+    width: 170px;
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    background: transparent;
+    border: 2px solid #C1CFDA;
     border-radius: 50%;
-    height: 40vh;
-    top: 30%;
-    left: 5%;
-    z-index: 1;
-}
-.name{
-    position: absolute;
-    right: 40vh;
-    top: 25vh;
-}
-.despcription{
-    position: absolute;
-    right: 40vh;
-    top: 60vh;
-}
-.links{
-    position: absolute;
-    right: 45vh;
-    top: 60vh;
-    text-align:center;
-}
+    font-size: 20px;
+    color:#C1CFDA;
+    text-decoration: none;
 
-/* Styling each side with different colors */
-
-
+}
