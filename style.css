@@ -1,4 +1,11 @@
+
+:root{
+    --color1: #18314F;
+    --color2: #C1CFDA;
+}
 *{
+    
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +13,7 @@
 }
 
 body{
-    background: #18314F ;
+    background:  var(--color1) ;
 }
 
 .header{
@@ -15,7 +22,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #C1CFDA;
+    background: var(--color2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +44,7 @@ body{
     transition: .3s;
 }
 .navbar a:hover, .navbar a.active {
-    color: #18314F;
+    color: var(--color1)
 }
 .home{
     height: 100vh;
@@ -50,6 +57,21 @@ body{
     color: white;
     
 }
+.toggle-bar{
+    position:absolute;
+    right: 10%;
+    top: 10%;
+    
+}
+.toggle-bar button{
+    width: 150%;
+    color: var(--color1);
+    background-color: var(--color2);
+    border-radius: 5px;
+}
+
+
+
 .home-content h1{
     font-size: 50px;
     font-weight: 700;
@@ -58,7 +80,7 @@ body{
 .home-content h3{
     font-size: 30px;
     font-weight: 700;
-    color: #C1CFDA;
+    color: var(--color2);
 }
 .home-content p{
     font-size: 16px;
@@ -76,8 +98,8 @@ body{
     flex-grow: 4;
     width: 40px;
     height: 100%;
-    border: 2px solid #C1CFDA;
-    background: #C1CFDA;
+    border: 2px solid var(--color2);
+    background: var(--color2);
     border-radius: 8px;
     font-size: 19px;
     color:  black;
@@ -92,7 +114,7 @@ body{
     width:17vw;
     height: 16vw;
     margin: 10px 0 10px;
-    background: #C1CFDA; ;
+    background: var(--color2); ;
 }
 .photo img{
     width: 15vw;
@@ -109,10 +131,10 @@ body{
     width: 40px;
     height: 40px; 
     background: transparent;
-    border: 2px solid #C1CFDA;
+    border: 2px solid var(--color2);
     border-radius: 50%;
     font-size: 20px;
-    color:#C1CFDA;
+    color:var(--color2);
     text-decoration: none;
 
 }
