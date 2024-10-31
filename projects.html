@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <script>
-        onload(keepDarkMode())
-    </script>
+<body onload = "keepDarkMode()">
+
     <header class = "header">
         <a href="#" class = "logo">Dunsin K</a>
 
         <nav class ="navbar">
-            <a href ="./index.html" onclick="keepDarkMode()">Home</a>
-            <a href ="#">About</a>
-            <a href ="#" class = "active">Projects</a>
-            <a href ="#">Contact</a>
-
+            <a href ="./index.html">Home</a>
+            <a href ="./about.html">About</a>
+            <a href ="./projects.html" class = "active" >Projects</a>
+            <a href ="./contact.html">Contact</a>
         </nav>
         
 
@@ -31,17 +28,20 @@
                 <button tag = "darkMode" onclick = "setDarkMode()">dark mode</button>
                 <span class ="slider"></span>
             </div>
-            <h1>Hey, I'm Dunsin Komolafe</h1>
-            <h3>Fullstack Devloper</h3>
-            <p>I'm currently a student at the Texas A&M University and am pursuing my Bachelors Degree in Computer Science.
-                I have years of experience programming in various programming languages from java, javascript, python, etc.
+            <h1>Here are some of my personal Projects:</h1>
+            <a href = "https://dunsink.github.io/TypeRacer/">Type Racer</a>
+            <p>Developed a program similar to TypeRacer or MonkeyType that uses an API to generate qoutes that the
+                User types out and the words per minute is calculated. Created as a Solo Project using Javascript, Html, and
+                CSS and hosted on github pages. (The title is a link to the page)
+                
             </p>
 
             <div class = "btn-box">
-                <a href="#">Contact Me!</a>
+                <a href="./contact.html">Contact Me!</a>
             </div>    
         </div>
-        
+        <div class ="typreracerphoto">
+        </div>
         <div class="home-sci">
             <a href ="https://www.linkedin.com/in/oluwadunsin-david-komolafe"><i class='bx bxl-linkedin-square' ></i></a>
             <a href ="https://github.com/DunsinK"><i class='bx bxl-github' ></i></a>

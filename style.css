@@ -82,6 +82,11 @@ body{
     font-weight: 700;
     color: var(--color2);
 }
+.home-content a{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color2);
+}
 .home-content p{
     font-size: 16px;
     margin: 20px 0 40px;
@@ -116,6 +121,16 @@ body{
     margin: 10px 0 10px;
     background: var(--color2); ;
 }
+.typreracerphoto{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:vw;
+    height: 16vw;
+    margin: 10px 0 10px;
+    background: var(--color2); ;
+}
+
 .photo img{
     width: 15vw;
 }

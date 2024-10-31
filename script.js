@@ -14,16 +14,20 @@ function setDarkMode(){
         styles.style.setProperty('--color2','#C1CFDA')
         darkMode = false
     }
+    console.log(darkMode)
 
 }
 function keepDarkMode(){
     if(darkMode){
         styles.style.setProperty('--color1','black')
-        styles.style.setProperty('--color2','grey')
+        styles.style.setProperty('--color2','grey') 
     }
     else{   
         styles.style.setProperty('--color1','#18314F')
-        styles.style.setProperty('--color2','#C1CFDA')
+        styles.style.setProperty('--color2','#C1CFDA') 
     }
+    console.log(darkMode)
+
+
 }
-onload(keepDarkMode())
+
